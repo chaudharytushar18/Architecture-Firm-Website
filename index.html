@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Aakaar Studio — Architecture portfolio demo with fictional Indian studio details.">
+  <title>Aakaar Studio — Architecture Redefined</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js" defer></script>
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <nav class="navbar">
+    <a href="javascript:void(0)" class="logo" onclick="showHome()">Aakaar Studio</a>
+    <div class="menu-icon" onclick="toggleMenu()" role="button" aria-label="Open menu" tabindex="0">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
+    <ul class="dropdown-menu" id="dropdown-menu">
+      <li><a href="javascript:void(0)" onclick="showHome()">Home</a></li>
+      <li><a href="javascript:void(0)" onclick="showSection('about-us')">About Us</a></li>
+      <li><a href="javascript:void(0)" onclick="showSection('services')">Services</a></li>
+      <li><a href="javascript:void(0)" onclick="showSection('portfolio')">Portfolio</a></li>
+      <li><a href="javascript:void(0)" onclick="showSection('careers')">Careers</a></li>
+      <li><a href="javascript:void(0)" onclick="showSection('contact')">Get In Touch</a></li>
+    </ul>
+  </nav>
+
+  <header class="hero">
+    <br><br><br><br>
+    <div class="hero-content">
+      <h1 class="hero-title">Where architecture meets innovation</h1>
+      <p class="hero-subtitle">Creating spaces that inspire and endure.</p>
+      <br>
+      <a href="javascript:void(0)" onclick="showSection('portfolio')" class="cta-button">View Portfolio</a>
+      <br><br><br><br><br><br><br><br><br>
+      <p>Welcome to Aakaar Studio, where every project tells a story of innovation, sustainability, and thoughtful design.</p>
+      <p>Office Address: 14, Meridian Heights, Sector 62, Noida, Uttar Pradesh 201309</p>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section id="home" class="section home show-section">
+      <section id="awards" class="awards-section">
+        <h2>Awards &amp; Recognitions</h2>
+        <p>Our commitment to architectural excellence has been recognised by design councils and publications across India.</p>
+        <div class="awards-grid">
+          <div class="award-badge">
+            <i class="fas fa-trophy"></i>
+            <h4>IIA State Chapter Award</h4>
+            <span>Indian Institute of Architects, 2024</span>
+          </div>
+          <div class="award-badge">
+            <i class="fas fa-medal"></i>
+            <h4>Green Built India Prize</h4>
+            <span>Sustainable Design Forum, 2023</span>
+          </div>
+          <div class="award-badge">
+            <i class="fas fa-star"></i>
+            <h4>Emerging Studio Feature</h4>
+            <span>Architecture+Design Magazine, 2022</span>
+          </div>
+        </div>
+      </section>
+
+      <div class="background-image">
+        <section id="testimonials">
+          <h2>Client Testimonials</h2>
+          <div id="reviewsSection">
+            <div class="testimonial">
+              <p>Working with Aakaar Studio was seamless. Their drawings were detailed and the finished campus feels calm and well-planned.</p>
+              <strong>— Vikram Desai, Shiksha Trust</strong>
+            </div>
+            <div class="testimonial">
+              <p>Strongly recommend for comprehensive architectural services. They balanced our budget without compromising on quality.</p>
+              <strong>— Meera Iyer, Lotus Hospitality</strong>
+            </div>
+            <div class="testimonial">
+              <p>We collaborated on two healthcare projects. The team understood clinical workflows and delivered on schedule.</p>
+              <strong>— Arjun Kapoor, Sapphire Health Group</strong>
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <section id="about-us" class="section studio">
+      <h2>About Our Studio</h2>
+      <p>
+        At Aakaar Studio, we believe architecture is more than buildings — it is about crafting environments that enrich everyday life. Our portfolio spans residential towers, commercial hubs, institutional campuses, hospitality venues, urban design, exhibition spaces, interiors, and landscape planning across India.
+        <br><br>
+        Led by principals Ananya Sharma and Rohit Malhotra, the studio brings together architects, interior designers, civil engineers, and site coordinators. Supported by consultants in MEP, structure, and sustainability, we deliver context-sensitive design rooted in climate, culture, and community needs.
+        <br><br>
+        Every project reflects our focus on innovation and client collaboration — from compact urban homes to large hospital complexes. Explore our work to see how ideas become enduring built environments.
+      </p>
+
+      <div class="philosophy">
+        <h3>Our Philosophy</h3>
+        <ul>
+          <li><strong>Innovation:</strong> We explore new materials and planning strategies to create spaces that are functional, inspiring, and future-ready.</li>
+          <li><strong>Sustainability:</strong> Passive cooling, daylight optimisation, rainwater harvesting, and low-carbon materials guide our design decisions.</li>
+          <li><strong>Context:</strong> We respect local heritage, neighbourhood scale, and regional climate so architecture feels rooted, not imported.</li>
+        </ul>
+      </div>
+
+      <div class="key-figures">
+        <h3>Principal Architects</h3>
+        <div class="architects">
+          <div class="architect">
+            <img src="https://images.unsplash.com/photo-1573497019940-943888efe1e2?w=400&h=300&fit=crop" alt="Ananya Sharma">
+            <div class="architect-details">
+              <h4>Ananya Sharma</h4>
+              <p>
+                Ananya co-founded Aakaar Studio after eighteen years leading healthcare and institutional projects. An alumna of SPA Delhi, she specialises in patient-centric planning, campus master planning, and design leadership across North India.
+              </p>
+            </div>
+          </div>
+          <div class="architect">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=300&fit=crop" alt="Rohit Malhotra">
+            <div class="architect-details">
+              <h4>Rohit Malhotra</h4>
+              <p>
+                Rohit directs hospitality and cultural projects at the studio. Trained at CEPT Ahmedabad, he blends contemporary form-making with crafts-led interiors. His work includes boutique hotels, restaurant chains, and adaptive reuse of heritage structures.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section services">
+      <h2 class="services-title">Our Services</h2>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-pencil-ruler"></i></div>
+          <h3>Architectural Design</h3>
+          <p>Innovative designs that balance aesthetics, Vastu-sensitive planning, and practical buildability.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-city"></i></div>
+          <h3>Master Planning</h3>
+          <p>Campus layouts, township frameworks, and transit-oriented development strategies.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-couch"></i></div>
+          <h3>Interior Design</h3>
+          <p>Residential and commercial interiors with custom furniture and finish palettes.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-sync-alt"></i></div>
+          <h3>Renovation &amp; Restoration</h3>
+          <p>Heritage-sensitive upgrades that meet current codes and accessibility standards.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-leaf"></i></div>
+          <h3>Sustainable Design</h3>
+          <p>GRIHA-aligned strategies, solar integration, and passive environmental design.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-tools"></i></div>
+          <h3>Project Management</h3>
+          <p>BOQ coordination, contractor liaison, and site supervision through handover.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="careers" class="section careers">
+      <h2>Join Our Team</h2>
+      <p>Aakaar Studio is looking for passionate designers ready to shape meaningful spaces across India. All listings below are fictional demo content.</p>
+
+      <h3>Why Work With Us</h3>
+      <ul>
+        <li>Diverse projects from homes to hospitals</li>
+        <li>Mentorship from senior principals</li>
+        <li>Flexible hybrid studio culture</li>
+        <li>Exposure to GRIHA and IGBC workflows</li>
+      </ul>
+
+      <h3>Current Openings</h3>
+      <div class="job-listings">
+        <div class="job-opening">
+          <h4>Junior Architect</h4>
+          <p>Location: Noida, UP · Full-Time</p>
+          <p>Assist with schematic design, 3D views, and tender drawing sets for institutional projects.</p>
+          <a href="mailto:careers.demo@aakaarstudio.example?subject=Application: Junior Architect" class="apply-btn">Apply Now</a>
+        </div>
+        <div class="job-opening">
+          <h4>Interior Designer</h4>
+          <p>Location: Bengaluru, KA · Full-Time</p>
+          <p>Develop mood boards, material schedules, and site-ready interior packages for hospitality clients.</p>
+          <a href="mailto:careers.demo@aakaarstudio.example?subject=Application: Interior Designer" class="apply-btn">Apply Now</a>
+        </div>
+      </div>
+
+      <h3>How to Apply</h3>
+      <p>Send your portfolio PDF and résumé to <a href="mailto:careers.demo@aakaarstudio.example">careers.demo@aakaarstudio.example</a>.</p>
+
+      <p class="contact-info">Questions? Reach HR at <a href="mailto:hr.demo@aakaarstudio.example">hr.demo@aakaarstudio.example</a>.</p>
+    </section>
+
+    <section id="portfolio" class="section portfolio">
+      <h2>Our Portfolio</h2>
+      <p>Explore sample work across hospitals, institutions, and restaurants. Click any project for details.</p>
+
+      <div class="portfolio-categories">
+        <div class="category-card" onclick="showProjects('hospitals')">
+          <span>Hospitals</span>
+        </div>
+        <div class="category-card" onclick="showProjects('institutions')">
+          <span>Institutions</span>
+        </div>
+        <div class="category-card" onclick="showProjects('restaurants')">
+          <span>Restaurants</span>
+        </div>
+      </div>
+
+      <div id="projects-grid" class="projects-grid hide">
+        <h3 id="category-title"></h3>
+        <div id="projects-container" class="projects-container"></div>
+        <button type="button" class="cta-button" onclick="backToCategories()">Back to Categories</button>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="contact-container">
+        <div class="contact-details">
+          <h2>Contact Us</h2>
+          <p><strong>Address:</strong> 14, Meridian Heights, Sector 62, Noida, Uttar Pradesh 201309</p>
+          <p><strong>Email:</strong> hello.demo@aakaarstudio.example</p>
+          <p><strong>Phone:</strong> +91 98765 43210<br>+91 87654 32109</p>
+        </div>
+        <div class="map-box">
+          <iframe
+            title="Studio location map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.1!2d77.3649!3d28.6270!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjjCsDM3JzM3LjIiTiA3N8KwMjEnNTMuNiJF!5e0!3m2!1sen!2sin!4v1"
+            width="100%"
+            height="300"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+
+      <p style="text-align:center; color:#bbb;">Reach out for collaboration, feedback, or to discuss your next project.</p>
+
+      <form id="contact-form">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+        <p id="form-notice" class="form-notice">Demo form — submissions are not delivered.</p>
+      </form>
+
+      <div class="social-media">
+        <h3>Find us on</h3>
+        <a href="https://example.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+        <a href="https://example.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="https://example.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="https://example.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      </div>
+    </section>
+  </main>
+
+  <div id="project-modal" class="project-modal">
+    <div class="modal-content">
+      <button type="button" class="modal-close" onclick="closeProjectModal()" aria-label="Close">&times;</button>
+      <img id="modal-image" src="" alt="">
+      <h3 id="modal-title"></h3>
+      <p id="modal-description"></p>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <p>&copy; 2025 Aakaar Studio. Portfolio demonstration — fictional studio details.</p>
+  </footer>
+</body>
+</html>
